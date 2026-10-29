@@ -1,0 +1,102 @@
+{
+  "TCKT_025902": {
+    "scenario_key": "access_bad_password",
+    "expected_agent": "access_check_agent",
+    "requires_hitl": false
+  },
+  "TCKT_073667": {
+    "scenario_key": "access_2fa",
+    "expected_agent": "access_check_agent",
+    "requires_hitl": false
+  },
+  "TCKT_046462": {
+    "scenario_key": "access_locked",
+    "expected_agent": "access_check_agent",
+    "requires_hitl": false
+  },
+  "TCKT_072298": {
+    "scenario_key": "billing_double_charge",
+    "expected_agent": "action_ticket_agent",
+    "requires_hitl": false
+  },
+  "TCKT_082586": {
+    "scenario_key": "billing_downgrade",
+    "expected_agent": "action_ticket_agent",
+    "requires_hitl": false
+  },
+  "TCKT_094279": {
+    "scenario_key": "billing_invoice",
+    "expected_agent": "action_ticket_agent",
+    "requires_hitl": false
+  },
+  "TCKT_009458": {
+    "scenario_key": "security_suspicious_login",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": true
+  },
+  "TCKT_070355": {
+    "scenario_key": "security_compliance",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": true
+  },
+  "TCKT_004157": {
+    "scenario_key": "security_vuln_login",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": true
+  },
+  "TCKT_091014": {
+    "scenario_key": "bug_error_analytics",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_027612": {
+    "scenario_key": "bug_not_saving_api",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_089152": {
+    "scenario_key": "bug_crash_export",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_084745": {
+    "scenario_key": "perf_timeout_api",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": false
+  },
+  "TCKT_099852": {
+    "scenario_key": "perf_slow_billing",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": false
+  },
+  "TCKT_082997": {
+    "scenario_key": "perf_degraded",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": false
+  },
+  "TCKT_003683": {
+    "scenario_key": "howto_configure_analytics",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_022192": {
+    "scenario_key": "howto_export_data",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_069597": {
+    "scenario_key": "howto_setup_api",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_009393": {
+    "scenario_key": "feature_customize_notifications",
+    "expected_agent": "knowledge_search_agent",
+    "requires_hitl": false
+  },
+  "TCKT_041546": {
+    "scenario_key": "other_unsure_category",
+    "expected_agent": "reasoning_agent",
+    "requires_hitl": false
+  }
+}

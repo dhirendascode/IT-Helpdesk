@@ -1,0 +1,93 @@
+# registry/tools.yaml
+
+tools:
+
+  - name: knowledge_search
+    description: "Search past resolved IT tickets for similar issues"
+    version: "1.0"
+    approval_required: false
+    enabled: true
+    input_schema:
+      query: str
+      top_k: int
+    output_schema:
+      results: list
+
+  - name: get_account_status
+    description: "Get customer account and SLA status from ticket metadata"
+    version: "1.0"
+    approval_required: false
+    enabled: true
+    input_schema:
+      customer_id: str
+      sla_plan: str
+    output_schema:
+      account_status: str
+      sla_tier: str
+      priority_support: bool
+
+  - name: check_policy
+    description: "Check if a requested action is allowed by policy rules"
+    version: "1.0"
+    approval_required: false
+    enabled: true
+    input_schema:
+      action: str
+      customer_segment: str
+      priority: str
+    output_schema:
+      allowed: bool
+      requires_hitl: bool
+      reason: str
+
+  - name: create_ticket
+    description: "Create a new escalation ticket in the system"
+    version: "1.0"
+    approval_required: false
+    enabled: true
+    input_schema:
+      issue_summary: str
+      priority: str
+      customer_id: str
+    output_schema:
+      ticket_id: str
+      status: str
+
+  - name: grant_access
+    description: "Grant system access to a user account"
+    version: "1.0"
+    approval_required: true          # ← triggers HITL
+    enabled: true
+    input_schema:
+      customer_id: str
+      system: str
+      access_level: str
+    output_schema:
+      status: str
+      granted_by: str
+
+  - name: reset_password
+    description: "Trigger a password reset for a user account"
+    version: "1.0"
+    approval_required: false
+    enabled: true
+    input_schema:
+      customer_id: str
+      method: str
+    output_schema:
+      status: str
+      reset_link_sent: bool
+
+  - name: flag_security_incident
+    description: "Flag a ticket as a security incident for review"
+    version: "1.0"
+    approval_required: true          # ← triggers HITL
+    enabled: true
+    input_schema:
+      ticket_id: str
+      incident_type: str
+      severity: str
+    output_schema:
+      incident_id: str
+      status: str
+      escalated_to: str
