@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     # Fast model — use for routing, classification
     # Cheaper and faster — saves tokens
-    groq_model_fast: str = "llama-3.1-8b-instant"
+    groq_model_fast: str = "allam-2-7b"
     embedding_model: Literal["local", "cohere"] = "cohere"
     cohere_api_key: str
 

@@ -1,0 +1,63 @@
+{
+  "registry_version": "1.0",
+  "agents": [
+    {
+      "name": "knowledge_search_agent",
+      "version": "1.0",
+      "description": "Searches past resolved IT tickets to find similar issues and resolutions",
+      "capabilities": [
+        "semantic_search",
+        "knowledge_retrieval",
+        "resolution_lookup"
+      ],
+      "handles_scenarios": ["bug", "feature", "howto"],
+      "tools_used": ["knowledge_search"],
+      "requires_hitl": false,
+      "enabled": true
+    },
+    {
+      "name": "access_check_agent",
+      "version": "1.0",
+      "description": "Handles account access issues — checks SLA, resets passwords, escalates access grants",
+      "capabilities": [
+        "account_lookup",
+        "sla_check",
+        "password_reset",
+        "access_management"
+      ],
+      "handles_scenarios": ["access"],
+      "tools_used": ["get_account_status", "reset_password", "grant_access"],
+      "requires_hitl": true,
+      "enabled": true
+    },
+    {
+      "name": "reasoning_agent",
+      "version": "1.0",
+      "description": "Handles complex, ambiguous or sensitive tickets — plans steps, checks policy, escalates security issues",
+      "capabilities": [
+        "multi_step_reasoning",
+        "policy_check",
+        "security_handling",
+        "escalation"
+      ],
+      "handles_scenarios": ["perf", "security", "other"],
+      "tools_used": ["check_policy", "flag_security_incident", "create_ticket"],
+      "requires_hitl": true,
+      "enabled": true
+    },
+    {
+      "name": "action_ticket_agent",
+      "version": "1.0",
+      "description": "Handles billing issues and creates escalation tickets",
+      "capabilities": [
+        "billing_resolution",
+        "ticket_creation",
+        "escalation"
+      ],
+      "handles_scenarios": ["billing"],
+      "tools_used": ["create_ticket", "get_account_status"],
+      "requires_hitl": false,
+      "enabled": true
+    }
+  ]
+}

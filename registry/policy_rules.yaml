@@ -1,0 +1,71 @@
+# registry/policy_rules.yaml
+
+# ─────────────────────────────────────────────────────────────
+# POLICY RULES
+#
+# Rules are evaluated in order — first match wins.
+# Each rule has:
+#   name        : unique identifier
+#   description : human readable explanation
+#   conditions  : what triggers this rule
+#   action      : what happens when rule fires
+#   reason      : message shown to human approver
+# ─────────────────────────────────────────────────────────────
+
+rules:
+
+  # ── Security rules — always HITL ────────────────────────────
+  - name: security_incident_always_hitl
+    description: "All security incidents require human review"
+    conditions:
+      issue_type_prefix: "security"
+    action: require_hitl
+    reason: "Security incidents always require human approval"
+    priority: 1
+
+  # ── Access grant rules ────────────────────────────────────
+  - name: access_grant_hitl
+    description: "Granting system access requires human approval"
+    conditions:
+      issue_type_prefix: "access"
+      priority: ["high", "critical"]
+    action: require_hitl
+    reason: "High priority access issues require human approval"
+    priority: 2
+
+  # ── Critical priority — always HITL ──────────────────────
+  - name: critical_priority_hitl
+    description: "Critical priority tickets always need human review"
+    conditions:
+      priority: ["critical"]
+    action: require_hitl
+    reason: "Critical priority tickets require human approval"
+    priority: 3
+
+  # ── Enterprise segment + security area ───────────────────
+  - name: enterprise_security_hitl
+    description: "Enterprise customers with security issues need HITL"
+    conditions:
+      customer_segment: ["enterprise"]
+      issue_type_prefix: "security"
+    action: require_hitl
+    reason: "Enterprise security issues require human approval"
+    priority: 4
+
+  # ── Performance + critical ────────────────────────────────
+  - name: perf_critical_hitl
+    description: "Critical performance issues need human review"
+    conditions:
+      issue_type_prefix: "perf"
+      priority: ["critical"]
+    action: require_hitl
+    reason: "Critical performance issues require human approval"
+    priority: 5
+
+  # ── Default — no HITL needed ──────────────────────────────
+  - name: default_allow
+    description: "All other tickets are auto-approved"
+    conditions: {}
+    action: allow
+    reason: "Auto-approved by policy engine"
+    priority: 999
