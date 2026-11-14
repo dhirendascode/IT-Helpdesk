@@ -1,0 +1,71 @@
+{
+  "saved_at": "2026-11-14T20:14:11.108226",
+  "session_id": "ced54625-43c4-43cf-988e-28f7c69fd223",
+  "state": {
+    "session_id": "ced54625-43c4-43cf-988e-28f7c69fd223",
+    "trace_id": "13820c79-faf6-4cde-98b4-1fb33ce00495",
+    "initial_message": "Can you explain how to configure api integration properly?",
+    "issue_type": "howto_api_integration",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "individual",
+    "sla_plan": "standard",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "knowledge_search_agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No relevant past resolution found with specific steps. The closest match (TCKT_009178) only states that \u201cstep-by-step instructions and relevant documentation\u201d were provided, but does not include the actual steps.\n\nPer policy, I cannot invent steps not supported by retrieved context. Please share the specific API platform or product involved so I can search for a more detailed resolution.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "knowledge_search": {
+        "results": [
+          {
+            "ticket_id": "TCKT_009178",
+            "scenario_key": "howto_configure_api",
+            "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+            "similarity_score": 0.571,
+            "content": "Issue : Can you explain how to configure api integration properly?\nResolution: Provided step-by-step instructions and relevant documentation."
+          },
+          {
+            "ticket_id": "TCKT_016234",
+            "scenario_key": "feature_support_api",
+            "resolution_summary": "Captured the request and added it to the product backlog.",
+            "similarity_score": 0.409,
+            "content": "Issue : It would be great to have api integration support in your product.\nResolution: Captured the request and added it to the product backlog."
+          },
+          {
+            "ticket_id": "TCKT_033258",
+            "scenario_key": "howto_configure_billing",
+            "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+            "similarity_score": 0.307,
+            "content": "Issue : Can you explain how to configure billing properly?\nResolution: Provided step-by-step instructions and relevant documentation."
+          }
+        ],
+        "total_found": 3
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No relevant past resolution found with specific steps. The closest match (TCKT_009178) only states that \u201cstep-by-step instructions and relevant documentation\u201d were provided, but does not include the actual steps.\n\nPer policy, I cannot invent steps not supported by retrieved context. Please share the specific API platform or product involved so I can search for a more detailed resolution.",
+    "groundness_score": 0.571,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

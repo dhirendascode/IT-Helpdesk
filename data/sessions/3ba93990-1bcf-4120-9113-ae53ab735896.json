@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-14T05:10:19.185785",
+  "session_id": "3ba93990-1bcf-4120-9113-ae53ab735896",
+  "state": {
+    "session_id": "3ba93990-1bcf-4120-9113-ae53ab735896",
+    "trace_id": "917a8056-2188-4402-af5f-5670ed642880",
+    "initial_message": "Can you explain how to configure analytics dashboard properly?",
+    "issue_type": "howto_configure_analytics_dashboard",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "enterprise",
+    "sla_plan": "standard",
+    "customer_id": "CUST_05412",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No similar past resolution found. Escalating.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_030604",
+          "scenario_key": "bug_crash_analytics",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.528,
+          "content": "Issue : The page keeps crashing whenever I try to open the analytics dashboard section.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_052194",
+          "scenario_key": "security_vuln_analytics",
+          "resolution_summary": "Investigated logs, mitigated the issue, and updated security settings.",
+          "similarity_score": 0.503,
+          "content": "Issue : There seems to be a vulnerability in the analytics dashboard functionality.\nResolution: Investigated logs, mitigated the issue, and updated security settings."
+        },
+        {
+          "ticket_id": "TCKT_074841",
+          "scenario_key": "howto_setup_analytics",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.498,
+          "content": "Issue : I need help setting up analytics dashboard for my team.\nResolution: Provided step-by-step instructions and relevant documentation."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No similar past resolution found. Escalating.",
+    "groundness_score": 0.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

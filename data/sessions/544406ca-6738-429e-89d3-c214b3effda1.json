@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-12T20:42:36.904435",
+  "session_id": "544406ca-6738-429e-89d3-c214b3effda1",
+  "state": {
+    "session_id": "544406ca-6738-429e-89d3-c214b3effda1",
+    "trace_id": "569219ea-9c9c-45ce-90e4-32ffd79c3df9",
+    "initial_message": "How can I export my data from the data export section?",
+    "issue_type": "howto_export_data",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "education",
+    "sla_plan": "standard",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No similar past resolution found. Escalating.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_058301",
+          "scenario_key": "howto_export_notifications",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.483,
+          "content": "Issue : How can I export my data from the notifications section?\nResolution: Provided step-by-step instructions and relevant documentation."
+        },
+        {
+          "ticket_id": "TCKT_099937",
+          "scenario_key": "howto_export_login",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.46,
+          "content": "Issue : How can I export my data from the login auth section?\nResolution: Provided step-by-step instructions and relevant documentation."
+        },
+        {
+          "ticket_id": "TCKT_052663",
+          "scenario_key": "howto_export_mobile",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.456,
+          "content": "Issue : How can I export my data from the mobile app section?\nResolution: Provided step-by-step instructions and relevant documentation."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No similar past resolution found. Escalating.",
+    "groundness_score": 0.0,
+    "eval_score": 0.2,
+    "expected_resolution": "Provided step-by-step instructions and relevant documentation.",
+    "error": null,
+    "retry_count": 0
+  }
+}

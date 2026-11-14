@@ -1,0 +1,47 @@
+{
+  "saved_at": "2026-11-12T20:39:46.559258",
+  "session_id": "91aecef1-028c-4460-ae70-87f91a7518a8",
+  "state": {
+    "session_id": "91aecef1-028c-4460-ae70-87f91a7518a8",
+    "trace_id": "34210352-3528-45f9-a013-f417154f9d10",
+    "initial_message": "I downgraded my plan but I am still being billed for the higher tier.",
+    "issue_type": "billing_downgrade",
+    "product_area": "",
+    "priority": "urgent",
+    "customer_segment": "education",
+    "sla_plan": "platinum",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Action/Ticket Agent activated",
+        "agent_name": "action_ticket_agent"
+      }
+    ],
+    "current_agent": "action_ticket_agent",
+    "routing_decision": "Requires investigation into billing system for incorrect charges",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "unknown",
+        "account_status": "active",
+        "sla_tier": "platinum",
+        "priority_support": false,
+        "sla_hours": 24
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "Billing action failed. Please contact support",
+    "groundness_score": 0.5,
+    "eval_score": 0.35,
+    "expected_resolution": "Adjusted the invoice and issued a refund where applicable.",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kytfa75mf6ttj4dxfvmh6tbe` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 559, Requested 445. Please try again in 240ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "retry_count": 0
+  }
+}

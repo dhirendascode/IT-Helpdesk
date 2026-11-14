@@ -1,0 +1,60 @@
+{
+  "saved_at": "2026-11-14T05:12:13.980615",
+  "session_id": "a068563d-583b-41f1-a155-50206f8b7785",
+  "state": {
+    "session_id": "a068563d-583b-41f1-a155-50206f8b7785",
+    "trace_id": "fb52b708-50d8-4d44-94d4-8313d1763f33",
+    "initial_message": "Can you explain how to configure billing properly?\n",
+    "issue_type": "billing",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "enterprise",
+    "sla_plan": "standard",
+    "customer_id": "CUST_05412",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Action/Ticket Agent activated",
+        "agent_name": "action_ticket_agent"
+      },
+      {
+        "role": "agent",
+        "content": "Hello, I understand you need guidance on configuring your billing settings. Since your account is active on the Standard plan, here is how to proceed:\n\n1.  **Access Billing Portal**: Log in to your dashboard and navigate to **Settings > Billing & Invoices**.\n2.  **Verify Payment Method**: Ensure your primary payment method is up-to-date to prevent service interruptions.\n3.  **Review Plan Details**: Confirm that your current Standard plan aligns with your usage. If you require different limits, you may need to adjust your subscription tier.\n4.  **Set Up Alerts**: Enable email notifications for upcoming invoices and payment failures to stay proactive.\n\nAs an enterprise customer, if you require specific invoicing details, tax ID updates, or custom payment terms, these often require manual review.\n\nCREATE_TICKET: Enterprise customer requires assistance configuring specific billing parameters and payment terms.\n\nYou can expect a member of our billing team to contact you within 24 hours to review your specific configuration needs and ensure everything is set up correctly for your enterprise requirements.\n\nEscalation ticket created: TCKT_7DC484\nOur billing team will contact you within 24 hours.",
+        "agent_name": "action_ticket_agent"
+      }
+    ],
+    "current_agent": "action_ticket_agent",
+    "routing_decision": "This ticket falls under the billing category and requires instructions on proper configuration; it will be routed to the relevant Billing Support team.",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "CUST_05412",
+        "account_status": "active",
+        "sla_tier": "standard",
+        "priority_support": false,
+        "sla_hours": 24
+      },
+      "create_ticket": {
+        "ticket_id": "TCKT_7DC484",
+        "status": "open",
+        "issue_summary": "Enterprise customer requires assistance configuring specific billing parameters and payment terms.",
+        "priority": "low",
+        "customer_id": "CUST_05412",
+        "created_at": "2024-01-01T00:00:00Z"
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "Hello, I understand you need guidance on configuring your billing settings. Since your account is active on the Standard plan, here is how to proceed:\n\n1.  **Access Billing Portal**: Log in to your dashboard and navigate to **Settings > Billing & Invoices**.\n2.  **Verify Payment Method**: Ensure your primary payment method is up-to-date to prevent service interruptions.\n3.  **Review Plan Details**: Confirm that your current Standard plan aligns with your usage. If you require different limits, you may need to adjust your subscription tier.\n4.  **Set Up Alerts**: Enable email notifications for upcoming invoices and payment failures to stay proactive.\n\nAs an enterprise customer, if you require specific invoicing details, tax ID updates, or custom payment terms, these often require manual review.\n\nCREATE_TICKET: Enterprise customer requires assistance configuring specific billing parameters and payment terms.\n\nYou can expect a member of our billing team to contact you within 24 hours to review your specific configuration needs and ensure everything is set up correctly for your enterprise requirements.\n\nEscalation ticket created: TCKT_7DC484\nOur billing team will contact you within 24 hours.",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

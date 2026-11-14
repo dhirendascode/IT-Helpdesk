@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 def prepare_data():
-    df = pd.read_csv("data/golden_it_support_tickets.csv")
+    df = pd.read_csv("data/extended_it_support_tickets.csv")
     
     columns_to_keep = [
         "ticket_id",
@@ -31,7 +31,7 @@ def prepare_data():
     kb = df[df["eval_split"]=="extended"].copy()
     kb_records = kb.to_dict(orient = "records")
     
-    kb_path = Path("data/golden_it_support_tickets.json")
+    kb_path = Path("data/extended_it_support_tickets.json")
     
     kb_path.parent.mkdir(exist_ok=True)
     with open(kb_path, "w") as file:

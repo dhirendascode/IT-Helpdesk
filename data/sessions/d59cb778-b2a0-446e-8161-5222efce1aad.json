@@ -1,0 +1,52 @@
+{
+  "saved_at": "2026-11-12T20:39:25.340701",
+  "session_id": "d59cb778-b2a0-446e-8161-5222efce1aad",
+  "state": {
+    "session_id": "d59cb778-b2a0-446e-8161-5222efce1aad",
+    "trace_id": "ff1ed5f9-8934-4d20-8566-6a25fd5f3491",
+    "initial_message": "My account was locked after multiple failed login attempts.",
+    "issue_type": "access_locked",
+    "product_area": "",
+    "priority": "medium",
+    "customer_segment": "enterprise",
+    "sla_plan": "standard",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Access Check Agent Activated",
+        "agent_name": "access_check_agent"
+      },
+      {
+        "role": "agent",
+        "content": "I understand how frustrating a locked account can be, especially when you need to get work done. Since your account is active, we can resolve this quickly.\n\n**Step 1: Self-Service Unlock**\n1. Go to the login page.\n2. Click \"Forgot Password?\" or \"Unlock Account.\"\n3. Verify your identity via email or SMS.\n4. Follow the prompts to reset your password. This usually unlocks the account immediately.\n\n**Step 2: If Self-Service Fails**\nIf you cannot access your recovery email or phone:\n1. Contact your local IT helpdesk.\n2. Provide your employee ID and verify your identity.\n3. They will manually clear the lockout flag.\n\n**Prevention Tip:**\nEnsure your password manager is up to date to avoid future failed attempts.\n\nIf you still cannot access your account after these steps, please reply with the specific error message you see.",
+        "agent_name": "access_check_agent"
+      }
+    ],
+    "current_agent": "access_check_agent",
+    "routing_decision": "User locked due to excessive login attempts",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "unknown",
+        "account_status": "active",
+        "sla_tier": "standard",
+        "priority_support": false,
+        "sla_hours": 24
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "I understand how frustrating a locked account can be, especially when you need to get work done. Since your account is active, we can resolve this quickly.\n\n**Step 1: Self-Service Unlock**\n1. Go to the login page.\n2. Click \"Forgot Password?\" or \"Unlock Account.\"\n3. Verify your identity via email or SMS.\n4. Follow the prompts to reset your password. This usually unlocks the account immediately.\n\n**Step 2: If Self-Service Fails**\nIf you cannot access your recovery email or phone:\n1. Contact your local IT helpdesk.\n2. Provide your employee ID and verify your identity.\n3. They will manually clear the lockout flag.\n\n**Prevention Tip:**\nEnsure your password manager is up to date to avoid future failed attempts.\n\nIf you still cannot access your account after these steps, please reply with the specific error message you see.",
+    "groundness_score": 1.0,
+    "eval_score": 0.667,
+    "expected_resolution": "Reset account credentials and confirmed successful login.",
+    "error": null,
+    "retry_count": 0
+  }
+}

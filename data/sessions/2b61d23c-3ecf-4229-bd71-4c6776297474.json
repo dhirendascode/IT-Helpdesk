@@ -1,0 +1,55 @@
+{
+  "saved_at": "2026-11-14T21:16:37.410699",
+  "session_id": "2b61d23c-3ecf-4229-bd71-4c6776297474",
+  "state": {
+    "session_id": "2b61d23c-3ecf-4229-bd71-4c6776297474",
+    "trace_id": "18d0be9b-913e-49ee-a5af-6bce6ab0ec89",
+    "initial_message": "There seems to be a vulnerability in the analytics dashboard functionality.",
+    "issue_type": "security_vulnerability",
+    "product_area": "analytics_dashboard",
+    "priority": "high",
+    "customer_segment": "individual",
+    "sla_plan": "standard",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "reasoning_agent activated",
+        "agent_name": "reasoning_agent"
+      },
+      {
+        "role": "agent",
+        "content": "**Analysis:**\n\n- `check_policy` confirms the action is allowed but requires HITL (Human-in-the-Loop) approval due to security policy.\n- `flag_security_incident` returned `REQUIRES_HUMAN_APPROVAL` as expected.\n\n**Action taken:**\nThe security vulnerability in the analytics dashboard has been flagged for human review. No automated remediation or disclosure will proceed without explicit human approval.\n\n**Next steps:**\n- A security engineer must review the vulnerability details.\n- The ticket will be escalated to the security response team.\n- Customer CUST_001 will be notified per standard SLA once human approval is granted.\n\nREQUIRES_HUMAN_APPROVAL: Security vulnerability in analytics dashboard (CUST_001) requires human security engineer review before any remediation or disclosure action can proceed.\n\nCONFIDENCE: HIGH",
+        "agent_name": "reasoning_agent"
+      }
+    ],
+    "current_agent": "reasoning_agent",
+    "routing_decision": "Security team needs to address potential threat",
+    "tool_results": {
+      "check_policy": {
+        "allowed": true,
+        "requires_hitl": true,
+        "reason": "Action 'flag_security_incident' requires human approval due to security policy"
+      },
+      "flag_security_incident": {
+        "error": "Tool 'flag_security_incident' requires human approval before execution"
+      }
+    },
+    "needs_approval": true,
+    "approval_status": "pending",
+    "policy_flags": [
+      "flag_security_incident_requires_human_approval"
+    ],
+    "resolution": "**Analysis:**\n\n- `check_policy` confirms the action is allowed but requires HITL (Human-in-the-Loop) approval due to security policy.\n- `flag_security_incident` returned `REQUIRES_HUMAN_APPROVAL` as expected.\n\n**Action taken:**\nThe security vulnerability in the analytics dashboard has been flagged for human review. No automated remediation or disclosure will proceed without explicit human approval.\n\n**Next steps:**\n- A security engineer must review the vulnerability details.\n- The ticket will be escalated to the security response team.\n- Customer CUST_001 will be notified per standard SLA once human approval is granted.\n\nREQUIRES_HUMAN_APPROVAL: Security vulnerability in analytics dashboard (CUST_001) requires human security engineer review before any remediation or disclosure action can proceed.\n\nCONFIDENCE: HIGH",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

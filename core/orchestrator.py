@@ -9,7 +9,7 @@ from langgraph.types import interrupt, Command
 from core.state import HelpdeskState, Message
 from core.llm_provider import get_llm_fast
 from core.agent_registry import ai_registry
-from agents import (
+from core.agent_node import (
     knowledge_search_agent,
     access_check_agent,
     reasoning_agent,
@@ -17,6 +17,7 @@ from agents import (
 )
 from core.policy_engine import policy_engine
 from observability.tracer import span
+from evaluation.session_store import session_store
 import time
 
 logger = logging.getLogger(__name__)
@@ -523,6 +524,10 @@ def run_ticket(
         f"hitl={final_state.get('needs_approval')} | "
         f"session={initial_state.session_id}"
     )
+    try:
+        session_store.save(state) 
+    except Exception as e:
+        logger.error(f"Failed to save session: {e}")
     
     return state, interrupts
     

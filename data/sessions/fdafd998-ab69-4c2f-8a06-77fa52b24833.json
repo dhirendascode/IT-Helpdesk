@@ -1,0 +1,50 @@
+{
+  "saved_at": "2026-11-14T21:05:39.628386",
+  "session_id": "fdafd998-ab69-4c2f-8a06-77fa52b24833",
+  "state": {
+    "session_id": "fdafd998-ab69-4c2f-8a06-77fa52b24833",
+    "trace_id": "b52b3c6b-baec-41be-8f91-dd42c18902d4",
+    "initial_message": "This started today. The CSV export is missing records that appear in the application screen.",
+    "issue_type": "perf_csv_export_issue",
+    "product_area": "<not specified>",
+    "priority": "high",
+    "customer_segment": "non_profit",
+    "sla_plan": "standard",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "reasoning_agent activated",
+        "agent_name": "reasoning_agent"
+      },
+      {
+        "role": "agent",
+        "content": "The policy allows creating an escalation ticket for this segment and priority. No Human-in-the-Loop (HITL) is required.\n\nNow, I will create the escalation ticket.\n\n<tool_call>\n<function=create_ticket>\n<parameter=title>\nHigh Priority: CSV Export Missing Records (CUST_001)\n</parameter>\n<parameter=description>\nCustomer CUST_001 reports that CSV exports are missing records that are visible in the application UI. Issue started today. Issue Type: perf_csv_export_issue.\n</parameter>\n<parameter=priority>\nhigh\n</parameter>\n<parameter=customer_id>\nCUST_001\n</parameter>\n</function>\n</tool_call>",
+        "agent_name": "reasoning_agent"
+      }
+    ],
+    "current_agent": "reasoning_agent",
+    "routing_decision": "Assigned to the development team to investigate and fix the performance issue with CSV export",
+    "tool_results": {
+      "check_policy": {
+        "allowed": true,
+        "requires_hitl": false,
+        "reason": "Action 'create_escalation_ticket' is permitted for non_profit"
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "The policy allows creating an escalation ticket for this segment and priority. No Human-in-the-Loop (HITL) is required.\n\nNow, I will create the escalation ticket.\n\n<tool_call>\n<function=create_ticket>\n<parameter=title>\nHigh Priority: CSV Export Missing Records (CUST_001)\n</parameter>\n<parameter=description>\nCustomer CUST_001 reports that CSV exports are missing records that are visible in the application UI. Issue started today. Issue Type: perf_csv_export_issue.\n</parameter>\n<parameter=priority>\nhigh\n</parameter>\n<parameter=customer_id>\nCUST_001\n</parameter>\n</function>\n</tool_call>",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

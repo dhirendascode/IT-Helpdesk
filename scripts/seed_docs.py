@@ -1,12 +1,13 @@
 import json
 import os
 import sys
+sys.path.append(".")
 from langchain_core.documents import Document
-from vector_store.vector_store import get_embedding, get_vector_store
+from vector_store.vector_store import get_vector_store
 from config import settings
 
 def seed():
-    kb_path="data/golden_it_support_tickets.json"
+    kb_path="data/extended_it_support_tickets.json"
     
     with open(kb_path, "r") as file:
         records = json.load(file)

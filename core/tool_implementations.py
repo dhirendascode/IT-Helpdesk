@@ -31,7 +31,7 @@ def knowledge_search(params: dict) -> dict:
 
     store = get_vector_store()
     results = store.similarity_search_with_score(query, k=top_k)
-
+    print(f"knowledge_search | query='{query[:50]}' | results={len(results)}")
     formatted = []
     for doc, score in results:
         formatted.append({

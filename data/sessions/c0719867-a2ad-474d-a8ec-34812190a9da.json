@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-12T20:37:47.443901",
+  "session_id": "c0719867-a2ad-474d-a8ec-34812190a9da",
+  "state": {
+    "session_id": "c0719867-a2ad-474d-a8ec-34812190a9da",
+    "trace_id": "f96af741-e952-4eef-876c-82b3ed450449",
+    "initial_message": "The api integration feature is not saving my changes.",
+    "issue_type": "bug_not_saving_api",
+    "product_area": "IT_support",
+    "priority": "medium",
+    "customer_segment": "small_business",
+    "sla_plan": "standard",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No similar past resolution found. Escalating.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "Assigned to IT support team for feature-related issue",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_029140",
+          "scenario_key": "bug_not_saving_billing",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.579,
+          "content": "Issue : The billing feature is not saving my changes.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_010869",
+          "scenario_key": "bug_not_saving_login",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.554,
+          "content": "Issue : The login auth feature is not saving my changes.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_016234",
+          "scenario_key": "feature_support_api",
+          "resolution_summary": "Captured the request and added it to the product backlog.",
+          "similarity_score": 0.445,
+          "content": "Issue : It would be great to have api integration support in your product.\nResolution: Captured the request and added it to the product backlog."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No similar past resolution found. Escalating.",
+    "groundness_score": 0.5,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

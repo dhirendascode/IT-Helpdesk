@@ -1,0 +1,71 @@
+{
+  "saved_at": "2026-11-14T21:07:58.813616",
+  "session_id": "ee3f077a-316a-4992-9dce-c908a5ff5a74",
+  "state": {
+    "session_id": "ee3f077a-316a-4992-9dce-c908a5ff5a74",
+    "trace_id": "618ff9e8-cafa-405b-b87a-db3c71a1f1e9",
+    "initial_message": "I have already tried signing out and back in. How do I share a project channel with an external partner safely?",
+    "issue_type": "howto_share_project_channel",
+    "product_area": "",
+    "priority": "high",
+    "customer_segment": "non_profit",
+    "sla_plan": "gold",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "knowledge_search_agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "Based on past resolved tickets (SYN_000039, SYN_000117, SYN_000156), follow these exact steps:\n\n1. Confirm your organization\u2019s external-sharing policy and obtain workspace owner approval before proceeding.\n2. Use the approved guest or shared-channel workflow (do not use ad-hoc sharing).\n3. Restrict channel membership to named partner accounts only.\n4. Review and limit file and app permissions within the channel.\n5. Set an access review date for the external partner\u2019s access.\n6. Do not invite a personal email address if policy requires a verified business identity.\n\nNote: Signing out/in is not part of the documented resolution for this issue.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "Provides guidance on securely sharing a project channel with an external partner",
+    "tool_results": {
+      "knowledge_search": {
+        "results": [
+          {
+            "ticket_id": "SYN_000039",
+            "scenario_key": "howto_shared_channel_variant_1",
+            "resolution_summary": "Resolved after the workspace owner approved a restricted guest invitation and reviewed the channel's file permissions. Troubleshooting guidance: Confirm the organization's external-sharing policy and obtain owner approval. Use the approved guest or shared-channel workflow, restrict membership to named partner accounts, review file and app permissions, and set an access review date. Do not invite a personal email address if policy requires a verified business identity.",
+            "similarity_score": 0.718,
+            "content": "Issue : This started today. How do I share a project channel with an external partner safely?\nResolution: Resolved after the workspace owner approved a restricted guest invitation and reviewed the channel's file permissions. Troubleshooting guidance: Confirm the organization's external-sharing polic"
+          },
+          {
+            "ticket_id": "SYN_000117",
+            "scenario_key": "howto_shared_channel_variant_3",
+            "resolution_summary": "Resolved after the workspace owner approved a restricted guest invitation and reviewed the channel's file permissions. Troubleshooting guidance: Confirm the organization's external-sharing policy and obtain owner approval. Use the approved guest or shared-channel workflow, restrict membership to named partner accounts, review file and app permissions, and set an access review date. Do not invite a personal email address if policy requires a verified business identity.",
+            "similarity_score": 0.707,
+            "content": "Issue : We need help resolving this before our next business day. How do I share a project channel with an external partner safely?\nResolution: Resolved after the workspace owner approved a restricted guest invitation and reviewed the channel's file permissions. Troubleshooting guidance: Confirm the"
+          },
+          {
+            "ticket_id": "SYN_000156",
+            "scenario_key": "howto_shared_channel_variant_4",
+            "resolution_summary": "Resolved after the workspace owner approved a restricted guest invitation and reviewed the channel's file permissions. Troubleshooting guidance: Confirm the organization's external-sharing policy and obtain owner approval. Use the approved guest or shared-channel workflow, restrict membership to named partner accounts, review file and app permissions, and set an access review date. Do not invite a personal email address if policy requires a verified business identity.",
+            "similarity_score": 0.704,
+            "content": "Issue : I have already tried signing out and back in. How do I share a project channel with an external partner safely?\nResolution: Resolved after the workspace owner approved a restricted guest invitation and reviewed the channel's file permissions. Troubleshooting guidance: Confirm the organizatio"
+          }
+        ],
+        "total_found": 3
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "Based on past resolved tickets (SYN_000039, SYN_000117, SYN_000156), follow these exact steps:\n\n1. Confirm your organization\u2019s external-sharing policy and obtain workspace owner approval before proceeding.\n2. Use the approved guest or shared-channel workflow (do not use ad-hoc sharing).\n3. Restrict channel membership to named partner accounts only.\n4. Review and limit file and app permissions within the channel.\n5. Set an access review date for the external partner\u2019s access.\n6. Do not invite a personal email address if policy requires a verified business identity.\n\nNote: Signing out/in is not part of the documented resolution for this issue.",
+    "groundness_score": 0.9,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

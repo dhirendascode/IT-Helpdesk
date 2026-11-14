@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-12T20:42:41.416155",
+  "session_id": "01a4fac7-53bb-4770-8953-831a34af380c",
+  "state": {
+    "session_id": "01a4fac7-53bb-4770-8953-831a34af380c",
+    "trace_id": "8cf5e911-ac57-4f7f-8252-2cfa7ee620f8",
+    "initial_message": "I need help setting up api integration for my team.",
+    "issue_type": "howto_setup_api",
+    "product_area": "",
+    "priority": "medium",
+    "customer_segment": "education",
+    "sla_plan": "standard",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No similar past resolution found. Escalating.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_009178",
+          "scenario_key": "howto_configure_api",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.515,
+          "content": "Issue : Can you explain how to configure api integration properly?\nResolution: Provided step-by-step instructions and relevant documentation."
+        },
+        {
+          "ticket_id": "TCKT_016234",
+          "scenario_key": "feature_support_api",
+          "resolution_summary": "Captured the request and added it to the product backlog.",
+          "similarity_score": 0.474,
+          "content": "Issue : It would be great to have api integration support in your product.\nResolution: Captured the request and added it to the product backlog."
+        },
+        {
+          "ticket_id": "TCKT_074841",
+          "scenario_key": "howto_setup_analytics",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.398,
+          "content": "Issue : I need help setting up analytics dashboard for my team.\nResolution: Provided step-by-step instructions and relevant documentation."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No similar past resolution found. Escalating.",
+    "groundness_score": 0.5,
+    "eval_score": 0.35,
+    "expected_resolution": "Provided step-by-step instructions and relevant documentation.",
+    "error": null,
+    "retry_count": 0
+  }
+}

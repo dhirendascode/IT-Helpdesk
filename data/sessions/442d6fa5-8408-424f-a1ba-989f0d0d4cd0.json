@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-12T20:13:11.630131",
+  "session_id": "442d6fa5-8408-424f-a1ba-989f0d0d4cd0",
+  "state": {
+    "session_id": "442d6fa5-8408-424f-a1ba-989f0d0d4cd0",
+    "trace_id": "eb025f21-f7ba-4fc5-a745-fa7bf641142c",
+    "initial_message": "App keeps crashing on mobile analytics screen",
+    "issue_type": "bug_crash_mobile",
+    "product_area": "mobile",
+    "priority": "high",
+    "customer_segment": "enterprise",
+    "sla_plan": "enterprise",
+    "customer_id": "",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "Based on the provided past resolutions, the issue is a known bug in the mobile analytics module. The standard resolution involves patching the code and deploying the fix.\n\n**Resolution Steps:**\n\n1.  **Verify Bug Status**: Confirm with the development team that a patch for the mobile analytics crash has been developed and is ready for deployment.\n2.  **Deploy Fix**: Deploy the patched build to the production environment.\n3.  **Validate**: Test the mobile analytics screen on a device to ensure the app no longer crashes.\n4.  **Close Ticket**: Notify the user that the fix has been deployed and ask them to update their app to the latest version.\n\n*Note: If the patch is not yet available, escalate to the engineering team for immediate deployment.*",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "App keeps crashing, routed to mobile development team for urgent bug fix",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_030604",
+          "scenario_key": "bug_crash_analytics",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.659,
+          "content": "Issue : The page keeps crashing whenever I try to open the analytics dashboard section.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_038448",
+          "scenario_key": "bug_crash_mobile",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.612,
+          "content": "Issue : The page keeps crashing whenever I try to open the mobile app section.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_015850",
+          "scenario_key": "bug_crash_notifications",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.478,
+          "content": "Issue : The page keeps crashing whenever I try to open the notifications section.\nResolution: Patched the bug and deployed a fix to production."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "Based on the provided past resolutions, the issue is a known bug in the mobile analytics module. The standard resolution involves patching the code and deploying the fix.\n\n**Resolution Steps:**\n\n1.  **Verify Bug Status**: Confirm with the development team that a patch for the mobile analytics crash has been developed and is ready for deployment.\n2.  **Deploy Fix**: Deploy the patched build to the production environment.\n3.  **Validate**: Test the mobile analytics screen on a device to ensure the app no longer crashes.\n4.  **Close Ticket**: Notify the user that the fix has been deployed and ask them to update their app to the latest version.\n\n*Note: If the patch is not yet available, escalate to the engineering team for immediate deployment.*",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

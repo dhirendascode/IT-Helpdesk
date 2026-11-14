@@ -1,0 +1,52 @@
+{
+  "saved_at": "2026-11-14T20:11:10.374165",
+  "session_id": "41e3a0b6-26bb-4a6c-9316-8dfd3a20b26f",
+  "state": {
+    "session_id": "41e3a0b6-26bb-4a6c-9316-8dfd3a20b26f",
+    "trace_id": "5cc844fb-fd07-4221-b401-53460229b911",
+    "initial_message": "Can you add an option to customize billing?",
+    "issue_type": "billing_feature",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "small_business",
+    "sla_plan": "standard",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "action_ticket_agent activated",
+        "agent_name": "action_ticket_agent"
+      },
+      {
+        "role": "agent",
+        "content": "Your account is active under the Standard SLA plan. Since billing customization is a feature request rather than a standard support issue, I'll create a low-priority ticket for our product team to review.\n\n<tool_call>\n<function=create_ticket>\n<parameter=customer_id>\nCUST_001\n</parameter>\n<parameter=issue_type>\nbilling_feature\n</parameter>\n<parameter=priority>\nlow\n</parameter>\n<parameter=description>\nCustomer requests option to customize billing settings. Account is active on Standard SLA. Small business segment.\n</parameter>\n</function>\n</tool_call>",
+        "agent_name": "action_ticket_agent"
+      }
+    ],
+    "current_agent": "action_ticket_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "CUST_001",
+        "account_status": "active",
+        "sla_tier": "standard",
+        "priority_support": false,
+        "sla_hours": 24
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "Your account is active under the Standard SLA plan. Since billing customization is a feature request rather than a standard support issue, I'll create a low-priority ticket for our product team to review.\n\n<tool_call>\n<function=create_ticket>\n<parameter=customer_id>\nCUST_001\n</parameter>\n<parameter=issue_type>\nbilling_feature\n</parameter>\n<parameter=priority>\nlow\n</parameter>\n<parameter=description>\nCustomer requests option to customize billing settings. Account is active on Standard SLA. Small business segment.\n</parameter>\n</function>\n</tool_call>",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

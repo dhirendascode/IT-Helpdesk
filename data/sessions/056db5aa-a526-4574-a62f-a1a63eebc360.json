@@ -1,0 +1,52 @@
+{
+  "saved_at": "2026-11-12T20:39:03.014045",
+  "session_id": "056db5aa-a526-4574-a62f-a1a63eebc360",
+  "state": {
+    "session_id": "056db5aa-a526-4574-a62f-a1a63eebc360",
+    "trace_id": "2200a6c6-bb7a-4db9-a215-e79f8001b677",
+    "initial_message": "My 2FA code is not working when I try to sign in.",
+    "issue_type": "access_2fa",
+    "product_area": "access",
+    "priority": "high",
+    "customer_segment": "individual",
+    "sla_plan": "gold",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Access Check Agent Activated",
+        "agent_name": "access_check_agent"
+      },
+      {
+        "role": "agent",
+        "content": "I understand how frustrating it is to be locked out of your account. Let\u2019s get your 2FA working again quickly.\n\n1.  **Check Time Sync**: Ensure your device\u2019s clock is set to automatic time. A few seconds\u2019 drift can invalidate codes.\n2.  **Regenerate Code**: Open your authenticator app and wait for a new code to appear. Do not use the previous one.\n3.  **Verify App**: If you recently reinstalled the app or changed devices, the old code will not work. You must re-add your account.\n4.  **Use Backup Codes**: If you have saved backup codes, enter one of those instead.\n5.  **Reset 2FA**: If the above fails, go to the \"Forgot 2FA?\" link on the login page. This triggers a secure reset via your registered email or phone.\n\nIf you cannot access your backup methods, please reply with your account email so I can guide you through identity verification.",
+        "agent_name": "access_check_agent"
+      }
+    ],
+    "current_agent": "access_check_agent",
+    "routing_decision": "Security concern: Ensuring account authentication",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "unknown",
+        "account_status": "active",
+        "sla_tier": "gold",
+        "priority_support": false,
+        "sla_hours": 24
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "I understand how frustrating it is to be locked out of your account. Let\u2019s get your 2FA working again quickly.\n\n1.  **Check Time Sync**: Ensure your device\u2019s clock is set to automatic time. A few seconds\u2019 drift can invalidate codes.\n2.  **Regenerate Code**: Open your authenticator app and wait for a new code to appear. Do not use the previous one.\n3.  **Verify App**: If you recently reinstalled the app or changed devices, the old code will not work. You must re-add your account.\n4.  **Use Backup Codes**: If you have saved backup codes, enter one of those instead.\n5.  **Reset 2FA**: If the above fails, go to the \"Forgot 2FA?\" link on the login page. This triggers a secure reset via your registered email or phone.\n\nIf you cannot access your backup methods, please reply with your account email so I can guide you through identity verification.",
+    "groundness_score": 1.0,
+    "eval_score": 0.667,
+    "expected_resolution": "Reset account credentials and confirmed successful login.",
+    "error": null,
+    "retry_count": 0
+  }
+}

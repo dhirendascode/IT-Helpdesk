@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-14T05:51:42.944142",
+  "session_id": "29852c1d-73ca-4225-ae95-eb754d2e7562",
+  "state": {
+    "session_id": "29852c1d-73ca-4225-ae95-eb754d2e7562",
+    "trace_id": "b44ab857-077a-404e-9ee8-10a9640d08fd",
+    "initial_message": "Can you explain how to configure api integration properly?",
+    "issue_type": "howto_api_integration",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "individual",
+    "sla_plan": "basic",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No similar past resolution found. Escalating.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_009178",
+          "scenario_key": "howto_configure_api",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.611,
+          "content": "Issue : Can you explain how to configure api integration properly?\nResolution: Provided step-by-step instructions and relevant documentation."
+        },
+        {
+          "ticket_id": "TCKT_016234",
+          "scenario_key": "feature_support_api",
+          "resolution_summary": "Captured the request and added it to the product backlog.",
+          "similarity_score": 0.435,
+          "content": "Issue : It would be great to have api integration support in your product.\nResolution: Captured the request and added it to the product backlog."
+        },
+        {
+          "ticket_id": "TCKT_033258",
+          "scenario_key": "howto_configure_billing",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.341,
+          "content": "Issue : Can you explain how to configure billing properly?\nResolution: Provided step-by-step instructions and relevant documentation."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No similar past resolution found. Escalating.",
+    "groundness_score": 0.8,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

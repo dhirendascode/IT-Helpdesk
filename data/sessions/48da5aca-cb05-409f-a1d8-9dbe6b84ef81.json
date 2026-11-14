@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-12T20:13:15.590720",
+  "session_id": "48da5aca-cb05-409f-a1d8-9dbe6b84ef81",
+  "state": {
+    "session_id": "48da5aca-cb05-409f-a1d8-9dbe6b84ef81",
+    "trace_id": "95c207f5-cd57-4e6d-b3fa-a5b157cb683a",
+    "initial_message": "App keeps crashing on mobile analytics screen",
+    "issue_type": "bug_crash_mobile",
+    "product_area": "mobile",
+    "priority": "high",
+    "customer_segment": "enterprise",
+    "sla_plan": "enterprise",
+    "customer_id": "",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "1. Acknowledge the high-priority ticket regarding the mobile analytics screen crash.\n2. Identify the issue as a known bug pattern matching `bug_crash_analytics` and `bug_crash_mobile`.\n3. Verify that the specific bug fix for the analytics crash has been developed and tested in the staging environment.\n4. Deploy the patched build to the production environment.\n5. Confirm with the user that the new version is available for download or update.\n6. Instruct the user to update the mobile app to the latest version.\n7. Ask the user to clear the app cache and restart the application.\n8. Request the user to navigate to the analytics screen to verify the crash no longer occurs.\n9. Close the ticket if the user confirms the issue is resolved; otherwise, escalate for further debugging.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "App keeps crashing, routed to mobile development team for urgent bug fix",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_030604",
+          "scenario_key": "bug_crash_analytics",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.659,
+          "content": "Issue : The page keeps crashing whenever I try to open the analytics dashboard section.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_038448",
+          "scenario_key": "bug_crash_mobile",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.612,
+          "content": "Issue : The page keeps crashing whenever I try to open the mobile app section.\nResolution: Patched the bug and deployed a fix to production."
+        },
+        {
+          "ticket_id": "TCKT_015850",
+          "scenario_key": "bug_crash_notifications",
+          "resolution_summary": "Patched the bug and deployed a fix to production.",
+          "similarity_score": 0.479,
+          "content": "Issue : The page keeps crashing whenever I try to open the notifications section.\nResolution: Patched the bug and deployed a fix to production."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "1. Acknowledge the high-priority ticket regarding the mobile analytics screen crash.\n2. Identify the issue as a known bug pattern matching `bug_crash_analytics` and `bug_crash_mobile`.\n3. Verify that the specific bug fix for the analytics crash has been developed and tested in the staging environment.\n4. Deploy the patched build to the production environment.\n5. Confirm with the user that the new version is available for download or update.\n6. Instruct the user to update the mobile app to the latest version.\n7. Ask the user to clear the app cache and restart the application.\n8. Request the user to navigate to the analytics screen to verify the crash no longer occurs.\n9. Close the ticket if the user confirms the issue is resolved; otherwise, escalate for further debugging.",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

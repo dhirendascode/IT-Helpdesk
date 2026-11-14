@@ -1,0 +1,52 @@
+{
+  "saved_at": "2026-11-12T20:36:17.466647",
+  "session_id": "8b7016e9-b12b-4c92-aeea-3fa87335e2df",
+  "state": {
+    "session_id": "8b7016e9-b12b-4c92-aeea-3fa87335e2df",
+    "trace_id": "cd5c9a9e-d3ee-44b4-ad05-37f8a0109b8a",
+    "initial_message": "My 2FA code is not working when I try to sign in.",
+    "issue_type": "access_2fa",
+    "product_area": "access",
+    "priority": "high",
+    "customer_segment": "individual",
+    "sla_plan": "gold",
+    "customer_id": "unknown",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Access Check Agent Activated",
+        "agent_name": "access_check_agent"
+      },
+      {
+        "role": "agent",
+        "content": "I understand how frustrating it is when 2FA blocks your work. Let\u2019s get you back in quickly.\n\n1.  **Check Time Sync**: Ensure your device\u2019s clock is accurate. 2FA codes are time-sensitive.\n2.  **Regenerate Code**: Open your authenticator app and wait for a new code to appear. Enter it carefully.\n3.  **Use Backup Codes**: If you have saved backup codes, use one now.\n4.  **Reset 2FA**: If the app is lost or broken, go to the self-service password reset page. Select \u201cLost 2FA Device\u201d to reset your authentication method. This may require identity verification.\n\nIf these steps fail, please contact support with your account details. We prioritize your security while ensuring you regain access.",
+        "agent_name": "access_check_agent"
+      }
+    ],
+    "current_agent": "access_check_agent",
+    "routing_decision": "Security concern: Ensuring account authentication",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "unknown",
+        "account_status": "active",
+        "sla_tier": "gold",
+        "priority_support": false,
+        "sla_hours": 24
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "I understand how frustrating it is when 2FA blocks your work. Let\u2019s get you back in quickly.\n\n1.  **Check Time Sync**: Ensure your device\u2019s clock is accurate. 2FA codes are time-sensitive.\n2.  **Regenerate Code**: Open your authenticator app and wait for a new code to appear. Enter it carefully.\n3.  **Use Backup Codes**: If you have saved backup codes, use one now.\n4.  **Reset 2FA**: If the app is lost or broken, go to the self-service password reset page. Select \u201cLost 2FA Device\u201d to reset your authentication method. This may require identity verification.\n\nIf these steps fail, please contact support with your account details. We prioritize your security while ensuring you regain access.",
+    "groundness_score": 1.0,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

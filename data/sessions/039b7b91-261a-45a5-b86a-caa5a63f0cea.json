@@ -1,0 +1,52 @@
+{
+  "saved_at": "2026-11-14T05:51:17.243998",
+  "session_id": "039b7b91-261a-45a5-b86a-caa5a63f0cea",
+  "state": {
+    "session_id": "039b7b91-261a-45a5-b86a-caa5a63f0cea",
+    "trace_id": "4656bc36-30e1-442c-a386-fb1cab44bf25",
+    "initial_message": "I need help setting up billing for my team.",
+    "issue_type": "billing",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "individual",
+    "sla_plan": "standard",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Action/Ticket Agent activated",
+        "agent_name": "action_ticket_agent"
+      },
+      {
+        "role": "agent",
+        "content": "Hello! I can certainly help you get started with billing for your team.\n\nFirst, I need to verify a few details to ensure we set this up correctly. Your account is currently listed under the **Individual** segment with a **Standard** plan. To enable team billing, we typically need to upgrade your account to a **Business** or **Team** segment.\n\nCould you please confirm:\n1. How many team members will be on the plan?\n2. Do you have a preferred payment method (credit card or bank transfer)?\n3. Are you looking to add seats to your current Standard plan, or upgrade to a higher tier?\n\nOnce I have these details, I can guide you through the upgrade process or provide the correct invoice setup. If you already have a specific invoice number or error message, please share that as well.\n\nI look forward to your response so we can get your team billed efficiently.",
+        "agent_name": "action_ticket_agent"
+      }
+    ],
+    "current_agent": "action_ticket_agent",
+    "routing_decision": "",
+    "tool_results": {
+      "get_account_status": {
+        "customer_id": "CUST_001",
+        "account_status": "active",
+        "sla_tier": "standard",
+        "priority_support": false,
+        "sla_hours": 24
+      }
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "Hello! I can certainly help you get started with billing for your team.\n\nFirst, I need to verify a few details to ensure we set this up correctly. Your account is currently listed under the **Individual** segment with a **Standard** plan. To enable team billing, we typically need to upgrade your account to a **Business** or **Team** segment.\n\nCould you please confirm:\n1. How many team members will be on the plan?\n2. Do you have a preferred payment method (credit card or bank transfer)?\n3. Are you looking to add seats to your current Standard plan, or upgrade to a higher tier?\n\nOnce I have these details, I can guide you through the upgrade process or provide the correct invoice setup. If you already have a specific invoice number or error message, please share that as well.\n\nI look forward to your response so we can get your team billed efficiently.",
+    "groundness_score": 0.9,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

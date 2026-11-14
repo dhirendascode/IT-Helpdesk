@@ -1,0 +1,68 @@
+{
+  "saved_at": "2026-11-14T06:01:10.177343",
+  "session_id": "2a025888-8571-430a-8800-6f20c79f965c",
+  "state": {
+    "session_id": "2a025888-8571-430a-8800-6f20c79f965c",
+    "trace_id": "2748a394-6893-44d9-bf9f-4916b3cf0034",
+    "initial_message": "I need help setting up data export for my team.",
+    "issue_type": "howto_export_data",
+    "product_area": "",
+    "priority": "low",
+    "customer_segment": "enterprise",
+    "sla_plan": "standard",
+    "customer_id": "CUST_001",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Planning node - classifying ticket",
+        "agent_name": "planning_node"
+      },
+      {
+        "role": "system",
+        "content": "Knowledge Search Agent activated",
+        "agent_name": "knowledge_search_agent"
+      },
+      {
+        "role": "agent",
+        "content": "No similar past resolution found. Escalating.",
+        "agent_name": "knowledge_search_agent"
+      }
+    ],
+    "current_agent": "knowledge_search_agent",
+    "routing_decision": "This ticket falls under the category of providing guidance on a specific task, thus it is routed to the How-To support team.",
+    "tool_results": {
+      "knowledge_search": [
+        {
+          "ticket_id": "TCKT_026234",
+          "scenario_key": "howto_setup_export",
+          "resolution_summary": "Provided step-by-step instructions and relevant documentation.",
+          "similarity_score": 0.566,
+          "content": "Issue : I need help setting up data export for my team.\nResolution: Provided step-by-step instructions and relevant documentation."
+        },
+        {
+          "ticket_id": "TCKT_085906",
+          "scenario_key": "perf_timeout_export",
+          "resolution_summary": "Optimized queries and increased resource allocation.",
+          "similarity_score": 0.42,
+          "content": "Issue : Queries in the data export module are timing out.\nResolution: Optimized queries and increased resource allocation."
+        },
+        {
+          "ticket_id": "TCKT_042953",
+          "scenario_key": "feature_support_export",
+          "resolution_summary": "Captured the request and added it to the product backlog.",
+          "similarity_score": 0.418,
+          "content": "Issue : It would be great to have data export support in your product.\nResolution: Captured the request and added it to the product backlog."
+        }
+      ]
+    },
+    "needs_approval": false,
+    "approval_status": "not_required",
+    "policy_flags": [],
+    "resolution": "No similar past resolution found. Escalating.",
+    "groundness_score": 0.5,
+    "eval_score": null,
+    "expected_resolution": "",
+    "error": null,
+    "retry_count": 0
+  }
+}

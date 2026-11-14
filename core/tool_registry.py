@@ -64,7 +64,7 @@ class ToolRegistry:
         return self.tools.get(name)
     
     def list_tools(self) -> list[ToolDefinition]:
-        return [t for t in self.tools.values if t.enabled]
+        return [t for t in self.tools.values() if t.enabled]
     
     def requires_approval(self, tool_name: str) -> bool:
         tool = self.get_tool(tool_name)

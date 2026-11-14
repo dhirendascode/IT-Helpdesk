@@ -40,6 +40,8 @@ class Settings(BaseSettings):
     router_ground_truth_path: str = "./data/router_ground_truth.json"
 
     log_level: str = "INFO"
+    
+    max_tool_retries: int = 3
 
     class Config:
         env_file = ".env"
